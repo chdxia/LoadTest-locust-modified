@@ -9,7 +9,7 @@ class UserBehavior(TaskSet):
         self.logout()
 
     def login(self):
-        self.client.post("/sessions", {"account": "admin", "password": "888888"})
+        self.client.post("/sessions", json={"account": "admin", "password": "888888"})
 
     def logout(self):
         # self.client.delete("/sessions/1")
@@ -28,4 +28,3 @@ class WebsiteUser(HttpUser):
     tasks = [UserBehavior]
     min_wait = 5000
     max_wait = 9000
-    host = 'http://localhost:8080/api/v1/app'
