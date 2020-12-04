@@ -12,7 +12,8 @@ class UserBehavior(TaskSet):
         self.client.post("/sessions", {"account": "admin", "password": "888888"})
 
     def logout(self):
-        self.client.delete("/sessions/1")
+        # self.client.delete("/sessions/1")
+        pass
 
     @task(2)
     def warehouses(self):

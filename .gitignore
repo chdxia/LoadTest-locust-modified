@@ -1,2 +1,5 @@
 .idea/
 __pycache__/
+example_failures.csv
+example_stats.csv
+example_stats_history.csv
