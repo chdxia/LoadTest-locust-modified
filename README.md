@@ -1,10 +1,11 @@
-# WebAPI_Test_locust_Demo
+# WebAPI_LoadTest_locust_Demo
 
 ### 参考
 
 - locust https://github.com/locustio/locust
+- locust官方文档 https://docs.locust.io/en/stable/
 
-### 执行压测脚本的基本指令
+### 执行压测脚本基本指令
 
 - locust -H http://localhost:8080/api/v1/app -u 30 -r 2 -t 60s --headless --csv example
 
