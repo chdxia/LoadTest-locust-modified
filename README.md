@@ -1,9 +1,10 @@
 # WebAPI_LoadTest_locust_Demo
 
-### 参考
+### 说明
 
-- locust https://github.com/locustio/locust
-- locust官方文档 https://docs.locust.io/en/stable/
+- locust运行测试脚本
+- pipenv管理python虚拟环境
+- docker让本地和服务器在相同环境上执行测试脚本
 
 ### 执行压测脚本基本指令
 
@@ -17,6 +18,13 @@
   - -H是被测目标地址
   - 运行指令 docker-compose up -d
 - worker机请使用docker-compose-worker文件中的内容覆盖docker-compose.yml
+  
   - --master-host是master主机地址
+  
   - 运行指令 docker-compose up -d
+
+### 参考
+
+- locust https://github.com/locustio/locust
+- locust官方文档 https://docs.locust.io/en/stable/
 
